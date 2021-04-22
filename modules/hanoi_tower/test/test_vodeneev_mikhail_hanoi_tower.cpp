@@ -7,34 +7,28 @@
 
 
 TEST(Vodeneev_Mikhail_HanoiTowerTest, First_test) {
-
     ASSERT_EQ(3, 1 + 2);
 }
 
 TEST(Vodeneev_Mikhail_HanoiTowerTest, no_exception_during_empty_creation) {
-
     ASSERT_NO_THROW(Hanoi t);
 }
 
 TEST(Vodeneev_Mikhail_HanoiTowerTest, No_exception_during_creation_with_param) {
-
     ASSERT_NO_THROW(Hanoi t(11));
 }
 
 TEST(Vodeneev_Mikhail_HanoiTowerTest,
     Exception_during_creation_with_negative_size) {
-
     ASSERT_THROW(Hanoi t(-2), int);
 }
 
 TEST(Vodeneev_Mikhail_HanoiTowerTest, Get_Size) {
-
     Hanoi t(10);
     ASSERT_EQ(10, t.Size());
 }
 
 TEST(Vodeneev_Mikhail_HanoiTowerTest, Get_Tower) {
-
     Hanoi t(10);
     std::stack<int> testA, testB = {}, testC = {};
     for (int i = 0; i < 10; i++)
@@ -45,7 +39,6 @@ TEST(Vodeneev_Mikhail_HanoiTowerTest, Get_Tower) {
 }
 
 TEST(Vodeneev_Mikhail_HanoiTowerTest, Ring) {
-
     Hanoi a(5);
     std::stack<int> testA = a.GetTowerA(),
         testB = a.GetTowerB(), testC = a.GetTowerC();
@@ -58,7 +51,6 @@ TEST(Vodeneev_Mikhail_HanoiTowerTest, Ring) {
 }
 
 TEST(Vodeneev_Mikhail_HanoiTowerTest, Ring_with_null_size) {
-
     Hanoi a(0);
     std::stack<int> testA = a.GetTowerA(),
         testB = a.GetTowerB(), testC = a.GetTowerC();
