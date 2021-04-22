@@ -18,7 +18,7 @@ TEST(Vodeneev_Mikhail_HanoiTowerTest, no_exception_during_empty_creation) {
 
 TEST(Vodeneev_Mikhail_HanoiTowerTest, No_exception_during_creation_with_param) {
 
-    ASSERT_NO_THROW(Hanoi t(10));
+    ASSERT_NO_THROW(Hanoi t(11));
 }
 
 TEST(Vodeneev_Mikhail_HanoiTowerTest,
