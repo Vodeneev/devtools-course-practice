@@ -9,13 +9,13 @@
 class StackApp {
  public:
 StackApp();
-	std::string operator()(int argc, const char** argv);
+    std::string operator()(int argc, const char** argv);
 
  private:
-	void help(const char* appname, const char* message = "");
-	bool validateNumberOfArguments(int argc, const char** argv);
-	std::string message_;
-	ModifiedStack stack;
+    void help(const char* appname, const char* message = "");
+    bool validateNumberOfArguments(int argc, const char** argv);
+    std::string message_;
+    ModifiedStack stack;
 };
 
 #endif  // MODULES_MODIFIED_STACK_MINIMUMS_INCLUDE_MODIFY_STACK_APP_H_
