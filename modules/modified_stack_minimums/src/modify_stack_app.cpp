@@ -62,7 +62,7 @@ std::string StackApp::operator()(int argc, const char** argv) {
     try {
         stack = parseStack(argv[1]);
     }
-     catch(std::string str) {
+     catch(std::string& str) {
         return str;
     }
 
